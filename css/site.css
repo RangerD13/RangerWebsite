@@ -1,0 +1,78 @@
+body {
+  font-family: "Urbanist", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Urbanist", sans-serif;
+}
+
+.brand-red {
+  color: rgb(146, 0, 10);
+}
+
+.display-heading {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.large-text {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.hero-logo {
+  max-height: 560px;
+}
+
+.image-box figcaption {
+  font-size: 0.65rem;
+  padding-top: 0.3rem;
+}
+
+.belmed-logo {
+  max-width: 220px;
+}
+
+.responsive-section-heading {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+.state-flag {
+  max-width: 150px;
+}
+
+.about-copy {
+  max-width: 900px;
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+}
+
+.footer-icon {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .image-fixed-size {
+    max-height: 250px;
+    object-fit: cover;
+  }
+}
