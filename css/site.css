@@ -126,6 +126,11 @@ section {
   max-height: 560px;
 }
 
+.hero-heading {
+  font-size: clamp(2.1rem, 5vw, 3.75rem);
+  font-weight: 700;
+}
+
 .masthead {
   background-color: var(--rgc-neutral-light);
   padding-top: 9.5rem;
