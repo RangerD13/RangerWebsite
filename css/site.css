@@ -6,6 +6,8 @@
   --rgc-accent: #E2E8F0;
   --rgc-primary-dark: #6f0008;
   --rgc-white: #fff;
+  --rgc-display-font: "Poppins", sans-serif;
+  --rgc-body-font: "Urbanist", sans-serif;
 
   --bs-primary: var(--rgc-primary);
   --bs-primary-rgb: 146, 0, 10;
@@ -19,7 +21,7 @@
 }
 
 body {
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--rgc-body-font);
   color: var(--rgc-secondary);
   background-color: var(--rgc-neutral-light);
 }
@@ -30,7 +32,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--rgc-display-font);
+  font-weight: 700;
 }
 
 .brand-red {
@@ -60,8 +63,22 @@ h6 {
 }
 
 .navbar-brand {
+  font-family: var(--rgc-display-font);
   font-weight: 700;
   color: var(--rgc-primary) !important;
+}
+
+#mainNav .nav-link,
+.btn,
+.modal-title {
+  font-family: var(--rgc-display-font);
+  font-weight: 600;
+}
+
+.display-1,
+.display-heading,
+.large-text {
+  font-family: var(--rgc-display-font);
 }
 
 html {
@@ -155,41 +172,20 @@ section {
   --bs-btn-disabled-border-color: var(--rgc-secondary);
 }
 
-.btn-secondary {
-  --bs-btn-color: var(--rgc-white);
-  --bs-btn-bg: var(--rgc-secondary);
-  --bs-btn-border-color: var(--rgc-secondary);
-  --bs-btn-hover-color: var(--rgc-white);
-  --bs-btn-hover-bg: #364152;
-  --bs-btn-hover-border-color: #364152;
-}
-
-.btn-success {
-  --bs-btn-color: var(--rgc-white);
-  --bs-btn-bg: var(--rgc-primary);
-  --bs-btn-border-color: var(--rgc-primary);
-  --bs-btn-hover-color: var(--rgc-white);
-  --bs-btn-hover-bg: var(--rgc-primary-dark);
-  --bs-btn-hover-border-color: var(--rgc-primary-dark);
-}
-
 .icon-square {
   background-color: var(--rgc-accent) !important;
   color: var(--rgc-secondary) !important;
 }
 
-.modal-content {
-  border-color: var(--rgc-accent);
-}
-
-.modal-header,
-.modal-footer {
-  border-color: var(--rgc-accent);
-}
-
-.form-control:focus {
-  border-color: var(--rgc-primary);
-  box-shadow: 0 0 0 0.25rem rgba(146, 0, 10, 0.2);
+.quickbooks-form-shell {
+  max-width: 860px;
+  min-height: 420px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1.5rem;
+  background-color: #fff;
+  border: 1px solid var(--rgc-accent);
+  border-radius: 0.5rem;
 }
 
 .image-box figcaption {

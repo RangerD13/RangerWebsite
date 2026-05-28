@@ -16,5 +16,5 @@ Then visit `http://localhost:8000`.
 
 - `index.html` - single-page website content
 - `css/site.css` - project-specific styles and Bootstrap overrides
-- `js/contact.js` - contact modal mailto behavior
+- `js/site.js` - mobile navigation behavior
 - `assets/` - logos, favicon, and images
