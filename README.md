@@ -15,7 +15,6 @@ Then visit `http://localhost:8000`.
 ## Structure
 
 - `index.html` - single-page website content
-- `css/styles.css` - Bootstrap/theme stylesheet copied from the live site
-- `css/site.css` - small project-specific overrides
+- `css/site.css` - project-specific styles and Bootstrap overrides
 - `js/contact.js` - contact modal mailto behavior
 - `assets/` - logos, favicon, and images
