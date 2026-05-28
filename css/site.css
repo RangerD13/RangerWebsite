@@ -1,5 +1,27 @@
+/* Ranger Gas Co. brand palette */
+:root {
+  --rgc-primary: #92000a;
+  --rgc-secondary: #4A5568;
+  --rgc-neutral-light: #F7FAFC;
+  --rgc-accent: #E2E8F0;
+  --rgc-primary-dark: #6f0008;
+  --rgc-white: #fff;
+
+  --bs-primary: var(--rgc-primary);
+  --bs-primary-rgb: 146, 0, 10;
+  --bs-secondary: var(--rgc-secondary);
+  --bs-secondary-rgb: 74, 85, 104;
+  --bs-light: var(--rgc-neutral-light);
+  --bs-light-rgb: 247, 250, 252;
+  --bs-body-color: var(--rgc-secondary);
+  --bs-link-color: var(--rgc-primary);
+  --bs-link-hover-color: var(--rgc-primary-dark);
+}
+
 body {
   font-family: "Urbanist", sans-serif;
+  color: var(--rgc-secondary);
+  background-color: var(--rgc-neutral-light);
 }
 
 h1,
@@ -12,7 +34,21 @@ h6 {
 }
 
 .brand-red {
-  color: rgb(146, 0, 10);
+  color: var(--rgc-primary);
+}
+
+.bg-white,
+.bg-light {
+  background-color: var(--rgc-neutral-light) !important;
+}
+
+.border-bottom,
+.border-top {
+  border-color: var(--rgc-accent) !important;
+}
+
+.text-muted {
+  color: var(--rgc-secondary) !important;
 }
 
 .display-heading {
@@ -25,6 +61,27 @@ h6 {
 
 .navbar-brand {
   font-weight: 700;
+  color: var(--rgc-primary) !important;
+}
+
+#mainNav {
+  background-color: var(--rgc-neutral-light) !important;
+  border-bottom: 1px solid var(--rgc-accent);
+}
+
+#mainNav .nav-link {
+  color: var(--rgc-secondary);
+}
+
+#mainNav .nav-link:hover,
+#mainNav .nav-link:focus,
+#mainNav .nav-link.active {
+  color: var(--rgc-primary);
+}
+
+.navbar-toggler {
+  border-color: var(--rgc-accent);
+  color: var(--rgc-secondary);
 }
 
 .social-icon {
@@ -38,6 +95,67 @@ h6 {
 
 .hero-logo {
   max-height: 560px;
+}
+
+.masthead {
+  background-color: var(--rgc-neutral-light);
+}
+
+.clientQuote {
+  background-color: var(--rgc-primary);
+}
+
+.btn-primary {
+  --bs-btn-color: var(--rgc-white);
+  --bs-btn-bg: var(--rgc-primary);
+  --bs-btn-border-color: var(--rgc-primary);
+  --bs-btn-hover-color: var(--rgc-white);
+  --bs-btn-hover-bg: var(--rgc-primary-dark);
+  --bs-btn-hover-border-color: var(--rgc-primary-dark);
+  --bs-btn-focus-shadow-rgb: 146, 0, 10;
+  --bs-btn-active-color: var(--rgc-white);
+  --bs-btn-active-bg: var(--rgc-primary-dark);
+  --bs-btn-active-border-color: var(--rgc-primary-dark);
+  --bs-btn-disabled-color: var(--rgc-white);
+  --bs-btn-disabled-bg: var(--rgc-secondary);
+  --bs-btn-disabled-border-color: var(--rgc-secondary);
+}
+
+.btn-secondary {
+  --bs-btn-color: var(--rgc-white);
+  --bs-btn-bg: var(--rgc-secondary);
+  --bs-btn-border-color: var(--rgc-secondary);
+  --bs-btn-hover-color: var(--rgc-white);
+  --bs-btn-hover-bg: #364152;
+  --bs-btn-hover-border-color: #364152;
+}
+
+.btn-success {
+  --bs-btn-color: var(--rgc-white);
+  --bs-btn-bg: var(--rgc-primary);
+  --bs-btn-border-color: var(--rgc-primary);
+  --bs-btn-hover-color: var(--rgc-white);
+  --bs-btn-hover-bg: var(--rgc-primary-dark);
+  --bs-btn-hover-border-color: var(--rgc-primary-dark);
+}
+
+.icon-square {
+  background-color: var(--rgc-accent) !important;
+  color: var(--rgc-secondary) !important;
+}
+
+.modal-content {
+  border-color: var(--rgc-accent);
+}
+
+.modal-header,
+.modal-footer {
+  border-color: var(--rgc-accent);
+}
+
+.form-control:focus {
+  border-color: var(--rgc-primary);
+  box-shadow: 0 0 0 0.25rem rgba(146, 0, 10, 0.2);
 }
 
 .image-box figcaption {
